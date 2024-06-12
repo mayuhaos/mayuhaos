@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Python进阶 | 宇豪Note💗</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="img/jz.png">
+    <meta name="description" content="一套为开发者学习准备的">
+    <meta name="referrer" content="no-referrer">
+    
+    <link rel="preload" href="/assets/css/0.styles.8a42047c.css" as="style"><link rel="preload" href="/assets/js/app.37e92eea.js" as="script"><link rel="preload" href="/assets/js/2.eeb78de2.js" as="script"><link rel="preload" href="/assets/js/110.adf9e69a.js" as="script"><link rel="prefetch" href="/assets/js/10.d76460ad.js"><link rel="prefetch" href="/assets/js/100.638e22db.js"><link rel="prefetch" href="/assets/js/101.87c98a30.js"><link rel="prefetch" href="/assets/js/102.b2f04932.js"><link rel="prefetch" href="/assets/js/103.566afefc.js"><link rel="prefetch" href="/assets/js/104.60b23742.js"><link rel="prefetch" href="/assets/js/105.20ca14bf.js"><link rel="prefetch" href="/assets/js/106.46731989.js"><link rel="prefetch" href="/assets/js/107.cf96336d.js"><link rel="prefetch" href="/assets/js/108.cb1f8ff6.js"><link rel="prefetch" href="/assets/js/109.c24be9d8.js"><link rel="prefetch" href="/assets/js/11.ed1838c4.js"><link rel="prefetch" href="/assets/js/111.80c69135.js"><link rel="prefetch" href="/assets/js/112.c20843bd.js"><link rel="prefetch" href="/assets/js/113.4f834c63.js"><link rel="prefetch" href="/assets/js/114.e1374ac0.js"><link rel="prefetch" href="/assets/js/115.0abccf6f.js"><link rel="prefetch" href="/assets/js/116.4f048f8d.js"><link rel="prefetch" href="/assets/js/117.d8120ce7.js"><link rel="prefetch" href="/assets/js/118.ab743e05.js"><link rel="prefetch" href="/assets/js/119.44e7eee9.js"><link rel="prefetch" href="/assets/js/12.8ec9727a.js"><link rel="prefetch" href="/assets/js/120.29edf473.js"><link rel="prefetch" href="/assets/js/121.6a660da8.js"><link rel="prefetch" href="/assets/js/122.d3f84e26.js"><link rel="prefetch" href="/assets/js/123.3e98fd21.js"><link rel="prefetch" href="/assets/js/124.6a9908d6.js"><link rel="prefetch" href="/assets/js/125.f56fa626.js"><link rel="prefetch" href="/assets/js/126.6fe8a258.js"><link rel="prefetch" href="/assets/js/127.e1b02a50.js"><link rel="prefetch" href="/assets/js/128.b8f282ca.js"><link rel="prefetch" href="/assets/js/129.162d0324.js"><link rel="prefetch" href="/assets/js/13.b62641a0.js"><link rel="prefetch" href="/assets/js/130.e06d7565.js"><link rel="prefetch" href="/assets/js/131.9404cce1.js"><link rel="prefetch" href="/assets/js/132.ddd4d31f.js"><link rel="prefetch" href="/assets/js/133.79e6d38d.js"><link rel="prefetch" href="/assets/js/134.293067f5.js"><link rel="prefetch" href="/assets/js/135.f93a8401.js"><link rel="prefetch" href="/assets/js/136.2d0fe24f.js"><link rel="prefetch" href="/assets/js/137.04740998.js"><link rel="prefetch" href="/assets/js/138.131eb539.js"><link rel="prefetch" href="/assets/js/139.8f9e3cd8.js"><link rel="prefetch" href="/assets/js/14.a327df26.js"><link rel="prefetch" href="/assets/js/140.62e44153.js"><link rel="prefetch" href="/assets/js/141.ef67f492.js"><link rel="prefetch" href="/assets/js/142.1a627a73.js"><link rel="prefetch" href="/assets/js/143.33f1ca0c.js"><link rel="prefetch" href="/assets/js/144.ac99c6c3.js"><link rel="prefetch" href="/assets/js/145.473b70a5.js"><link rel="prefetch" href="/assets/js/15.dad943ad.js"><link rel="prefetch" href="/assets/js/16.d7db763f.js"><link rel="prefetch" href="/assets/js/17.5717ba68.js"><link rel="prefetch" href="/assets/js/18.bf8b5641.js"><link rel="prefetch" href="/assets/js/19.fb55bd57.js"><link rel="prefetch" href="/assets/js/20.fae245b0.js"><link rel="prefetch" href="/assets/js/21.c24b33a6.js"><link rel="prefetch" href="/assets/js/22.6d017c51.js"><link rel="prefetch" href="/assets/js/23.065a4d5b.js"><link rel="prefetch" href="/assets/js/24.cb978a38.js"><link rel="prefetch" href="/assets/js/25.3ff5f5cf.js"><link rel="prefetch" href="/assets/js/26.65a549c6.js"><link rel="prefetch" href="/assets/js/27.519293b7.js"><link rel="prefetch" href="/assets/js/28.a5a6f557.js"><link rel="prefetch" href="/assets/js/29.65571e97.js"><link rel="prefetch" href="/assets/js/3.1dd16952.js"><link rel="prefetch" href="/assets/js/30.78883eac.js"><link rel="prefetch" href="/assets/js/31.44e79b9c.js"><link rel="prefetch" href="/assets/js/32.49f20510.js"><link rel="prefetch" href="/assets/js/33.e2bea5bb.js"><link rel="prefetch" href="/assets/js/34.a74b08e0.js"><link rel="prefetch" href="/assets/js/35.8754bf07.js"><link rel="prefetch" href="/assets/js/36.94f5d3b1.js"><link rel="prefetch" href="/assets/js/37.cc18e788.js"><link rel="prefetch" href="/assets/js/38.e57093b4.js"><link rel="prefetch" href="/assets/js/39.f8db58c3.js"><link rel="prefetch" href="/assets/js/4.5ea1e4d5.js"><link rel="prefetch" href="/assets/js/40.6f4b785f.js"><link rel="prefetch" href="/assets/js/41.ded1dc7a.js"><link rel="prefetch" href="/assets/js/42.425831a2.js"><link rel="prefetch" href="/assets/js/43.c8863b06.js"><link rel="prefetch" href="/assets/js/44.416adb02.js"><link rel="prefetch" href="/assets/js/45.f1b94a5f.js"><link rel="prefetch" href="/assets/js/46.1b9def47.js"><link rel="prefetch" href="/assets/js/47.eaba0170.js"><link rel="prefetch" href="/assets/js/48.bf25113b.js"><link rel="prefetch" href="/assets/js/49.12244d11.js"><link rel="prefetch" href="/assets/js/5.13f997e9.js"><link rel="prefetch" href="/assets/js/50.95ddaa9a.js"><link rel="prefetch" href="/assets/js/51.f26e4715.js"><link rel="prefetch" href="/assets/js/52.24066875.js"><link rel="prefetch" href="/assets/js/53.ad7c772a.js"><link rel="prefetch" href="/assets/js/54.fd20d35c.js"><link rel="prefetch" href="/assets/js/55.c315cb83.js"><link rel="prefetch" href="/assets/js/56.1f6ab776.js"><link rel="prefetch" href="/assets/js/57.f7b48800.js"><link rel="prefetch" href="/assets/js/58.e60287db.js"><link rel="prefetch" href="/assets/js/59.d0c99808.js"><link rel="prefetch" href="/assets/js/6.804421fd.js"><link rel="prefetch" href="/assets/js/60.e818c6c2.js"><link rel="prefetch" href="/assets/js/61.cad2fb2a.js"><link rel="prefetch" href="/assets/js/62.9e70a7cb.js"><link rel="prefetch" href="/assets/js/63.d16394a0.js"><link rel="prefetch" href="/assets/js/64.3c39f79c.js"><link rel="prefetch" href="/assets/js/65.eae38bc3.js"><link rel="prefetch" href="/assets/js/66.8655ed91.js"><link rel="prefetch" href="/assets/js/67.4e963323.js"><link rel="prefetch" href="/assets/js/68.52bb5546.js"><link rel="prefetch" href="/assets/js/69.9bba5d26.js"><link rel="prefetch" href="/assets/js/7.9aa36c1e.js"><link rel="prefetch" href="/assets/js/70.dc7b5092.js"><link rel="prefetch" href="/assets/js/71.b673e14a.js"><link rel="prefetch" href="/assets/js/72.a0d76944.js"><link rel="prefetch" href="/assets/js/73.153d3207.js"><link rel="prefetch" href="/assets/js/74.2514ac14.js"><link rel="prefetch" href="/assets/js/75.ea21689f.js"><link rel="prefetch" href="/assets/js/76.ea13dbdd.js"><link rel="prefetch" href="/assets/js/77.3789652a.js"><link rel="prefetch" href="/assets/js/78.92af4d7f.js"><link rel="prefetch" href="/assets/js/79.75f6b53d.js"><link rel="prefetch" href="/assets/js/8.74c51eb5.js"><link rel="prefetch" href="/assets/js/80.ecc38c5a.js"><link rel="prefetch" href="/assets/js/81.4596bdb3.js"><link rel="prefetch" href="/assets/js/82.7818ded9.js"><link rel="prefetch" href="/assets/js/83.030d0d2e.js"><link rel="prefetch" href="/assets/js/84.80f078e7.js"><link rel="prefetch" href="/assets/js/85.5cc8457f.js"><link rel="prefetch" href="/assets/js/86.e0378fff.js"><link rel="prefetch" href="/assets/js/87.29620831.js"><link rel="prefetch" href="/assets/js/88.59ce9cb1.js"><link rel="prefetch" href="/assets/js/89.e5d45351.js"><link rel="prefetch" href="/assets/js/9.3d041152.js"><link rel="prefetch" href="/assets/js/90.4336caba.js"><link rel="prefetch" href="/assets/js/91.6d15d784.js"><link rel="prefetch" href="/assets/js/92.a5401b0e.js"><link rel="prefetch" href="/assets/js/93.6bcdc9fb.js"><link rel="prefetch" href="/assets/js/94.0657dbb9.js"><link rel="prefetch" href="/assets/js/95.b112a2d9.js"><link rel="prefetch" href="/assets/js/96.a456947d.js"><link rel="prefetch" href="/assets/js/97.c918f485.js"><link rel="prefetch" href="/assets/js/98.3e7373b1.js"><link rel="prefetch" href="/assets/js/99.76d5f0ae.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8a42047c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/title.png" alt="宇豪Note💗" class="logo"> <span class="site-name can-hide">宇豪Note💗</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于我" class="dropdown-title"><span class="title">关于我</span> <span class="arrow down"></span></button> <button type="button" aria-label="关于我" class="mobile-dropdown-title"><span class="title">关于我</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/AboutMe/关于网站.html" class="nav-link">
+  关于网站
+</a></li><li class="dropdown-item"><!----> <a href="/AboutMe/关于经历/关于经历.html" class="nav-link">
+  关于经历
+</a></li><li class="dropdown-item"><!----> <a href="/AboutMe/关于爱好.html" class="nav-link">
+  关于爱好
+</a></li><li class="dropdown-item"><!----> <a href="/AboutMe/关于她.html" class="nav-link">
+  关于她
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="java开发" class="dropdown-title"><span class="title">java开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="java开发" class="mobile-dropdown-title"><span class="title">java开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          入门
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java后端/入门/java基础/" class="nav-link">
+  写在前面
+</a></li><li class="dropdown-subitem"><a href="/java后端/入门/java基础/动力节点/JavaSE进阶-01-面向对象.html" class="nav-link">
+  javaSE基础
+</a></li><li class="dropdown-subitem"><a href="/java后端/入门/java网络编程/狂神/JavaSE：网络编程.html" class="nav-link">
+  java网络编程
+</a></li><li class="dropdown-subitem"><a href="/java后端/入门/javaGUI编程/狂神/javaGUI编程.html" class="nav-link">
+  java-GUI开发
+</a></li><li class="dropdown-subitem"><a href="/java后端/入门/javaWeb/黑马/01HTTP&amp;Tomcat&amp;Servlet.html" class="nav-link">
+  JavaWeb
+</a></li><li class="dropdown-subitem"><a href="/java后端/入门/Spring/狂神/Spring.html" class="nav-link">
+  Spring
+</a></li><li class="dropdown-subitem"><a href="/java后端/入门/SpringMVC/狂神/SpringMVC.html" class="nav-link">
+  SpringMVC
+</a></li><li class="dropdown-subitem"><a href="/java后端/入门/SpringBoot/狂神/SpringBoot入门及原理.html" class="nav-link">
+  SpringBoot
+</a></li></ul></li><li class="dropdown-item"><h4>
+          接口文档Swagger(可作了解)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java后端/入门/SpringBoot/狂神/Swagger.html" class="nav-link">
+  Swagger
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据库&amp;框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/数据库/mysql/sql-个人.html" class="nav-link">
+  mysql
+</a></li><li class="dropdown-subitem"><a href="/java后端/java数据库框架/jdbc-黑马.html" class="nav-link">
+  JDBC驱动
+</a></li><li class="dropdown-subitem"><a href="/java后端/java数据库框架/mybatis-狂神.html" class="nav-link">
+  mybatis框架
+</a></li><li class="dropdown-subitem"><a href="/java后端/java数据库框架/mybatis-plus01-黑马.html" class="nav-link">
+  mybatis-plus框架
+</a></li></ul></li><li class="dropdown-item"><h4>
+          权限框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java后端/权限框架/" class="nav-link">
+  写在前面
+</a></li><li class="dropdown-subitem"><a href="/java后端/权限框架/SpringSecurity/狂神/SpringSecurity.html" class="nav-link">
+  SpringSecurity
+</a></li><li class="dropdown-subitem"><a href="/java后端/权限框架/Shiro/狂神/Shiro.html" class="nav-link">
+  Shiro
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶SpringCloud
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java后端/SpringCloud/" class="nav-link">
+  写在前面
+</a></li><li class="dropdown-subitem"><a href="/java后端/SpringCloud/注册中心nacos&amp;Eureka/动力节点/nacos注册中心.html" class="nav-link">
+  注册中心nacos&amp;Eureka
+</a></li><li class="dropdown-subitem"><a href="/java后端/SpringCloud/网关Gateway/动力节点/Gateway.html" class="nav-link">
+  网关Gateway
+</a></li><li class="dropdown-subitem"><a href="/java后端/SpringCloud/负载均衡Ribbon/动力节点/Ribbon.html" class="nav-link">
+  负载均衡Ribbon
+</a></li><li class="dropdown-subitem"><a href="/java后端/SpringCloud/熔断降级Hystrix&amp;sentinel/动力节点/Hystrix.html" class="nav-link">
+  熔断降级Hystrix&amp;sentinel
+</a></li><li class="dropdown-subitem"><a href="/java后端/SpringCloud/远程调用OpenFeign/动力节点/OpenFeign.html" class="nav-link">
+  远程调用OpenFeign
+</a></li><li class="dropdown-subitem"><a href="/java后端/SpringCloud/链路追踪sleuth/动力节点/Sleuth.html" class="nav-link">
+  链路追踪sleuth
+</a></li><li class="dropdown-subitem"><a href="/java后端/SpringCloud/分布式搜索ElasticSerach/狂神/ElasticSearch.html" class="nav-link">
+  分布式搜索ElasticSerach
+</a></li><li class="dropdown-subitem"><a href="/java后端/SpringCloud/消息队列RabbitMQ/飞哥/RabbitMQ.html" class="nav-link">
+  消息队列RabbitMQ
+</a></li></ul></li><li class="dropdown-item"><h4>
+          高级
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java后端/高级/" class="nav-link">
+  写在前面
+</a></li><li class="dropdown-subitem"><a href="/java后端/高级/jvm/黑马/引言.html" class="nav-link">
+  jvm内存
+</a></li><li class="dropdown-subitem"><a href="/java后端/高级/juc/黑马/01并发编程.html" class="nav-link">
+  juc并发编程
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端开发" class="dropdown-title"><span class="title">前端开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端开发" class="mobile-dropdown-title"><span class="title">前端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/前端/" class="nav-link">
+  写在前面
+</a></li><li class="dropdown-item"><h4>
+          基础-(前端三件套)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端/基础/HTML/黑马/HTML标签.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/前端/基础/CSS/黑马/01-CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/前端/基础/JavaScript/黑马/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/前端/基础/jQuery/黑马/01-jQuery常用API.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-subitem"><a href="/前端/基础/CSS/移动端/02_HTML5.html" class="nav-link">
+  移动端开发
+</a></li></ul></li><li class="dropdown-item"><h4>
+          入门
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端/入门/入门串讲/狂神/大前端串讲.html" class="nav-link">
+  入门串讲
+</a></li><li class="dropdown-subitem"><a href="/前端/入门/Vue/狂神/Vue精讲.html" class="nav-link">
+  Vue框架
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="python开发" class="dropdown-title"><span class="title">python开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="python开发" class="mobile-dropdown-title"><span class="title">python开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/python/" class="nav-link router-link-active">
+  写在前面
+</a></li><li class="dropdown-item"><h4>
+          入门
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/python/python_base.html" class="nav-link">
+  python基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          odoo框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/odoo/odoo_base/guide.html" class="nav-link">
+  快速入门
+</a></li><li class="dropdown-subitem"><a href="/odoo/odoo_core/orm.html" class="nav-link">
+  核心开发
+</a></li><li class="dropdown-subitem"><a href="/odoo/odoo_core/report.html" class="nav-link">
+  报表
+</a></li><li class="dropdown-subitem"><a href="/odoo/pendant.html" class="nav-link">
+  挂件
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><span class="title">大数据</span> <span class="arrow down"></span></button> <button type="button" aria-label="大数据" class="mobile-dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/bigdata/" class="nav-link">
+  写在前面
+</a></li><li class="dropdown-item"><!----> <a href="/bigdata/hbase/hbase.html" class="nav-link">
+  Hbase
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据库/" class="nav-link">
+  写在前面
+</a></li><li class="dropdown-item"><h4>
+          mySQL
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/数据库/mysql/sql-个人.html" class="nav-link">
+  入门到进阶
+</a></li></ul></li><li class="dropdown-item"><h4>
+          redis
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/数据库/redis/Redis-狂神.html" class="nav-link">
+  入门到进阶
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Hbase
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/数据库/Hbase/尚硅谷/Hbase.html" class="nav-link">
+  入门到进阶
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维部署" class="dropdown-title"><span class="title">运维部署</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维部署" class="mobile-dropdown-title"><span class="title">运维部署</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/运维部署/" class="nav-link">
+  写在前面
+</a></li><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/运维部署/Linux/狂神/Linux使用.html" class="nav-link">
+  Linux使用
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Docker部署
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/运维部署/Docker/狂神/Docker_file.html" class="nav-link">
+  DockerFile
+</a></li><li class="dropdown-subitem"><a href="/运维部署/Docker/狂神/Docker_compose.html" class="nav-link">
+  DockerCompose
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Git版本控制
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/运维部署/git/git.html" class="nav-link">
+  Git
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="下蛋公鸡🐣" class="dropdown-title"><span class="title">下蛋公鸡🐣</span> <span class="arrow down"></span></button> <button type="button" aria-label="下蛋公鸡🐣" class="mobile-dropdown-title"><span class="title">下蛋公鸡🐣</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/qq_47913744?spm=1000.2115.3001.5343" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/yhstu" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://music.163.com/#/artist/album?id=34597186" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的网易云
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于我" class="dropdown-title"><span class="title">关于我</span> <span class="arrow down"></span></button> <button type="button" aria-label="关于我" class="mobile-dropdown-title"><span class="title">关于我</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/AboutMe/关于网站.html" class="nav-link">
+  关于网站
+</a></li><li class="dropdown-item"><!----> <a href="/AboutMe/关于经历/关于经历.html" class="nav-link">
+  关于经历
+</a></li><li class="dropdown-item"><!----> <a href="/AboutMe/关于爱好.html" class="nav-link">
+  关于爱好
+</a></li><li class="dropdown-item"><!----> <a href="/AboutMe/关于她.html" class="nav-link">
+  关于她
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="java开发" class="dropdown-title"><span class="title">java开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="java开发" class="mobile-dropdown-title"><span class="title">java开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          入门
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java后端/入门/java基础/" class="nav-link">
+  写在前面
+</a></li><li class="dropdown-subitem"><a href="/java后端/入门/java基础/动力节点/JavaSE进阶-01-面向对象.html" class="nav-link">
+  javaSE基础
+</a></li><li class="dropdown-subitem"><a href="/java后端/入门/java网络编程/狂神/JavaSE：网络编程.html" class="nav-link">
+  java网络编程
+</a></li><li class="dropdown-subitem"><a href="/java后端/入门/javaGUI编程/狂神/javaGUI编程.html" class="nav-link">
+  java-GUI开发
+</a></li><li class="dropdown-subitem"><a href="/java后端/入门/javaWeb/黑马/01HTTP&amp;Tomcat&amp;Servlet.html" class="nav-link">
+  JavaWeb
+</a></li><li class="dropdown-subitem"><a href="/java后端/入门/Spring/狂神/Spring.html" class="nav-link">
+  Spring
+</a></li><li class="dropdown-subitem"><a href="/java后端/入门/SpringMVC/狂神/SpringMVC.html" class="nav-link">
+  SpringMVC
+</a></li><li class="dropdown-subitem"><a href="/java后端/入门/SpringBoot/狂神/SpringBoot入门及原理.html" class="nav-link">
+  SpringBoot
+</a></li></ul></li><li class="dropdown-item"><h4>
+          接口文档Swagger(可作了解)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java后端/入门/SpringBoot/狂神/Swagger.html" class="nav-link">
+  Swagger
+</a></li></ul></li><li class="dropdown-item"><h4>
+          数据库&amp;框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/数据库/mysql/sql-个人.html" class="nav-link">
+  mysql
+</a></li><li class="dropdown-subitem"><a href="/java后端/java数据库框架/jdbc-黑马.html" class="nav-link">
+  JDBC驱动
+</a></li><li class="dropdown-subitem"><a href="/java后端/java数据库框架/mybatis-狂神.html" class="nav-link">
+  mybatis框架
+</a></li><li class="dropdown-subitem"><a href="/java后端/java数据库框架/mybatis-plus01-黑马.html" class="nav-link">
+  mybatis-plus框架
+</a></li></ul></li><li class="dropdown-item"><h4>
+          权限框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java后端/权限框架/" class="nav-link">
+  写在前面
+</a></li><li class="dropdown-subitem"><a href="/java后端/权限框架/SpringSecurity/狂神/SpringSecurity.html" class="nav-link">
+  SpringSecurity
+</a></li><li class="dropdown-subitem"><a href="/java后端/权限框架/Shiro/狂神/Shiro.html" class="nav-link">
+  Shiro
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶SpringCloud
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java后端/SpringCloud/" class="nav-link">
+  写在前面
+</a></li><li class="dropdown-subitem"><a href="/java后端/SpringCloud/注册中心nacos&amp;Eureka/动力节点/nacos注册中心.html" class="nav-link">
+  注册中心nacos&amp;Eureka
+</a></li><li class="dropdown-subitem"><a href="/java后端/SpringCloud/网关Gateway/动力节点/Gateway.html" class="nav-link">
+  网关Gateway
+</a></li><li class="dropdown-subitem"><a href="/java后端/SpringCloud/负载均衡Ribbon/动力节点/Ribbon.html" class="nav-link">
+  负载均衡Ribbon
+</a></li><li class="dropdown-subitem"><a href="/java后端/SpringCloud/熔断降级Hystrix&amp;sentinel/动力节点/Hystrix.html" class="nav-link">
+  熔断降级Hystrix&amp;sentinel
+</a></li><li class="dropdown-subitem"><a href="/java后端/SpringCloud/远程调用OpenFeign/动力节点/OpenFeign.html" class="nav-link">
+  远程调用OpenFeign
+</a></li><li class="dropdown-subitem"><a href="/java后端/SpringCloud/链路追踪sleuth/动力节点/Sleuth.html" class="nav-link">
+  链路追踪sleuth
+</a></li><li class="dropdown-subitem"><a href="/java后端/SpringCloud/分布式搜索ElasticSerach/狂神/ElasticSearch.html" class="nav-link">
+  分布式搜索ElasticSerach
+</a></li><li class="dropdown-subitem"><a href="/java后端/SpringCloud/消息队列RabbitMQ/飞哥/RabbitMQ.html" class="nav-link">
+  消息队列RabbitMQ
+</a></li></ul></li><li class="dropdown-item"><h4>
+          高级
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/java后端/高级/" class="nav-link">
+  写在前面
+</a></li><li class="dropdown-subitem"><a href="/java后端/高级/jvm/黑马/引言.html" class="nav-link">
+  jvm内存
+</a></li><li class="dropdown-subitem"><a href="/java后端/高级/juc/黑马/01并发编程.html" class="nav-link">
+  juc并发编程
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端开发" class="dropdown-title"><span class="title">前端开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端开发" class="mobile-dropdown-title"><span class="title">前端开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/前端/" class="nav-link">
+  写在前面
+</a></li><li class="dropdown-item"><h4>
+          基础-(前端三件套)
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端/基础/HTML/黑马/HTML标签.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-subitem"><a href="/前端/基础/CSS/黑马/01-CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/前端/基础/JavaScript/黑马/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/前端/基础/jQuery/黑马/01-jQuery常用API.html" class="nav-link">
+  jQuery
+</a></li><li class="dropdown-subitem"><a href="/前端/基础/CSS/移动端/02_HTML5.html" class="nav-link">
+  移动端开发
+</a></li></ul></li><li class="dropdown-item"><h4>
+          入门
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/前端/入门/入门串讲/狂神/大前端串讲.html" class="nav-link">
+  入门串讲
+</a></li><li class="dropdown-subitem"><a href="/前端/入门/Vue/狂神/Vue精讲.html" class="nav-link">
+  Vue框架
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="python开发" class="dropdown-title"><span class="title">python开发</span> <span class="arrow down"></span></button> <button type="button" aria-label="python开发" class="mobile-dropdown-title"><span class="title">python开发</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/python/" class="nav-link router-link-active">
+  写在前面
+</a></li><li class="dropdown-item"><h4>
+          入门
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/python/python_base.html" class="nav-link">
+  python基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          odoo框架
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/odoo/odoo_base/guide.html" class="nav-link">
+  快速入门
+</a></li><li class="dropdown-subitem"><a href="/odoo/odoo_core/orm.html" class="nav-link">
+  核心开发
+</a></li><li class="dropdown-subitem"><a href="/odoo/odoo_core/report.html" class="nav-link">
+  报表
+</a></li><li class="dropdown-subitem"><a href="/odoo/pendant.html" class="nav-link">
+  挂件
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="大数据" class="dropdown-title"><span class="title">大数据</span> <span class="arrow down"></span></button> <button type="button" aria-label="大数据" class="mobile-dropdown-title"><span class="title">大数据</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/bigdata/" class="nav-link">
+  写在前面
+</a></li><li class="dropdown-item"><!----> <a href="/bigdata/hbase/hbase.html" class="nav-link">
+  Hbase
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据库/" class="nav-link">
+  写在前面
+</a></li><li class="dropdown-item"><h4>
+          mySQL
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/数据库/mysql/sql-个人.html" class="nav-link">
+  入门到进阶
+</a></li></ul></li><li class="dropdown-item"><h4>
+          redis
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/数据库/redis/Redis-狂神.html" class="nav-link">
+  入门到进阶
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Hbase
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/数据库/Hbase/尚硅谷/Hbase.html" class="nav-link">
+  入门到进阶
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维部署" class="dropdown-title"><span class="title">运维部署</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维部署" class="mobile-dropdown-title"><span class="title">运维部署</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/运维部署/" class="nav-link">
+  写在前面
+</a></li><li class="dropdown-item"><h4>
+          Linux
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/运维部署/Linux/狂神/Linux使用.html" class="nav-link">
+  Linux使用
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Docker部署
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/运维部署/Docker/狂神/Docker_file.html" class="nav-link">
+  DockerFile
+</a></li><li class="dropdown-subitem"><a href="/运维部署/Docker/狂神/Docker_compose.html" class="nav-link">
+  DockerCompose
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Git版本控制
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/运维部署/git/git.html" class="nav-link">
+  Git
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="下蛋公鸡🐣" class="dropdown-title"><span class="title">下蛋公鸡🐣</span> <span class="arrow down"></span></button> <button type="button" aria-label="下蛋公鸡🐣" class="mobile-dropdown-title"><span class="title">下蛋公鸡🐣</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://blog.csdn.net/qq_47913744?spm=1000.2115.3001.5343" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/yhstu" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://music.163.com/#/artist/album?id=34597186" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  我的网易云
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>快速入门</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/python/python_base.html" class="sidebar-link">基础</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>深入</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/python/python_core.html" aria-current="page" class="active sidebar-link">进阶</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/python/python_core.html#生成器" class="sidebar-link">生成器</a></li><li class="sidebar-sub-header"><a href="/python/python_core.html#迭代器" class="sidebar-link">迭代器</a></li><li class="sidebar-sub-header"><a href="/python/python_core.html#迭代器和生成器的关系" class="sidebar-link">迭代器和生成器的关系</a></li><li class="sidebar-sub-header"><a href="/python/python_core.html#函数式编程" class="sidebar-link">函数式编程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/python/python_core.html#高阶函数" class="sidebar-link">高阶函数</a></li><li class="sidebar-sub-header"><a href="/python/python_core.html#返回函数" class="sidebar-link">返回函数</a></li><li class="sidebar-sub-header"><a href="/python/python_core.html#匿名函数" class="sidebar-link">匿名函数</a></li></ul></li><li class="sidebar-sub-header"><a href="/python/python_core.html#面相对象编程" class="sidebar-link">面相对象编程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/python/python_core.html#类和实例" class="sidebar-link">类和实例</a></li><li class="sidebar-sub-header"><a href="/python/python_core.html#继承" class="sidebar-link">继承</a></li><li class="sidebar-sub-header"><a href="/python/python_core.html#多态" class="sidebar-link">多态</a></li><li class="sidebar-sub-header"><a href="/python/python_core.html#模块引入及正则表达式" class="sidebar-link">模块引入及正则表达式</a></li></ul></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="python进阶"><a href="#python进阶" class="header-anchor">#</a> Python进阶</h1> <div class="custom-block tip"><p class="custom-block-title">目录</p> <ul><li><p>生成器</p></li> <li><p>迭代器</p></li></ul></div> <h3 id="切片"><a href="#切片" class="header-anchor">#</a> 切片</h3> <p>针对list、tuple、字符；</p> <p>在截取部分上述对象部分内容，传统实现使用循环遍历过于繁琐</p> <p>切片使用索引截取实现</p> <p>[0:3]表示，从索引0开始取，直到索引3为止，但不包括索引3</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment">#1,1切片</span>
+<span class="token keyword">def</span> <span class="token function">test_slice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    a_listlist<span class="token punctuation">(</span><span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>a_list<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>a_list<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>a_list<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">10</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>a_list<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">:</span><span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>a_list<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">10</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>a_list<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+    b_tuple <span class="token builtin">tuple</span><span class="token punctuation">(</span><span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>b_tuple<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>b_tuple<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    c_str <span class="token string">'printb_tuple'</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>c_str<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+          
+test_slice<span class="token punctuation">(</span>J<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h3 id="迭代"><a href="#迭代" class="header-anchor">#</a> 迭代</h3> <p>通过for循环来遍历这个list或tuple，这种遍历我们称为迭代（Iteration）</p> <p>C语言，迭代list是通过下标完成的</p> <p>Python的for循环抽象程度要高于C的for循环，因为Python的for循环不仅可以用在list或tuple上，还可以作用在其他可迭代对象上，例如：dict、str</p> <p>通过collections.abc模块的Iterable类型判断是否是可迭代对象</p> <p>使用enumerate获取下表循环</p> <p>支持多变量循环</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment">#1.2送代</span>
+<span class="token keyword">def</span> <span class="token function">test_iteration</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">from</span> collections<span class="token punctuation">.</span>abc <span class="token keyword">import</span> Iterable
+    a_d1ct<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">,</span>'b&quot;<span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">}</span>
+    bstr <span class="token operator">=</span> <span class="token string">'isinstance'</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">isinstance</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span>Iterable<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">isinstance</span><span class="token punctuation">(</span><span class="token string">'sass'</span><span class="token punctuation">,</span>Iterable<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">isinstance</span><span class="token punctuation">(</span>a_dict<span class="token punctuation">,</span>Iterable<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">isinstance</span><span class="token punctuation">(</span><span class="token number">12333</span><span class="token punctuation">,</span>Iterable<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> a<span class="token punctuation">,</span>b <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>b_str<span class="token punctuation">)</span><span class="token punctuation">:</span>
+   		<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span>
+    <span class="token keyword">for</span> a<span class="token punctuation">,</span>b <span class="token keyword">in</span> a_dict<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    	<span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span>
+          
+test_iteration<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h2 id="生成器"><a href="#生成器" class="header-anchor">#</a> 生成器</h2> <p>生成器本质上也是迭代器,对于可以用某种算法推算得到的多个数据，生成器并不会一次性生成它们，而是什么时候需要，才什么时候生成。</p> <h4 id="生成器的创建方式"><a href="#生成器的创建方式" class="header-anchor">#</a> 生成器的创建方式：</h4> <p>1.定义一个以 yield 关键字标识返回值的函数</p> <p>2.调用刚刚创建的函数，即可创建一个生成器。</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">intNum</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;开始执行&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">yield</span> i
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;继续执行&quot;</span><span class="token punctuation">)</span>
+
+num <span class="token operator">=</span> intNum<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># 创建了一个 num 生成器对象</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h4 id="生成器的调用和执行"><a href="#生成器的调用和执行" class="header-anchor">#</a> 生成器的调用和执行：</h4> <p>1.通过生成器调用 next() 内置函数或者 <strong>next</strong>() 方法</p> <p>2.通过 for 循环遍历生成器。</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment"># 在左边程序的基础上，添加如下语句</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">next</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">)</span>    <span class="token comment"># 调用next内置函数</span>
+
+<span class="token keyword">for</span> i <span class="token keyword">in</span> num<span class="token punctuation">:</span>       <span class="token comment"># for循环</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>i）
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>和 return 相比，yield 除了可以返回相应的值，还有一个更重要的功能，即每当程序执行完该语句时，程序就会暂停执行。不仅如此，即便调用生成器函数，Python 解释器也不会执行函数中的代码，它只会返回一个生成器（对象）</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment">#1.4生成器</span>
+<span class="token keyword">def</span> <span class="token function">test_generator1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    a <span class="token operator">=</span> <span class="token punctuation">[</span>n <span class="token keyword">for</span> n <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+    b <span class="token operator">=</span> <span class="token punctuation">(</span>n <span class="token keyword">for</span> n <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'next:'</span><span class="token builtin">next</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'next:'</span><span class="token builtin">next</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> x <span class="token keyword">in</span> b<span class="token punctuation">:</span>
+	<span class="token keyword">print</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h2 id="迭代器"><a href="#迭代器" class="header-anchor">#</a> 迭代器</h2> <p>可以被next()函数调用并不断返回下一个值的对象称为迭代器。</p> <h4 id="创建迭代器对象"><a href="#创建迭代器对象" class="header-anchor">#</a> 创建迭代器对象：</h4> <p>1.可以被next()函数调用并不断返回下一个值的对象称为迭代器：Iterator</p> <p>2.迭代器有两个基本的方法：iter() 和 next()</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token builtin">list</span><span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span>
+it <span class="token operator">=</span> <span class="token builtin">iter</span><span class="token punctuation">(</span><span class="token builtin">list</span><span class="token punctuation">)</span>    <span class="token comment"># 创建迭代器对象</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">next</span><span class="token punctuation">(</span>it<span class="token punctuation">)</span><span class="token punctuation">)</span>    <span class="token comment"># 返回一个迭代器，并输出每个值	</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h4 id="判断迭代器对象和可迭代对象"><a href="#判断迭代器对象和可迭代对象" class="header-anchor">#</a> 判断迭代器对象和可迭代对象</h4> <p>1.用isinstance()判断一个对象是否是Iterable（可迭代）对象</p> <p>2.用isinstance()判断一个对象是否是Iterator（迭代器）对象：</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">from</span> collections<span class="token punctuation">.</span>abc <span class="token keyword">import</span> Iterator
+<span class="token builtin">isinstance</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> Iterable<span class="token punctuation">)</span>  <span class="token comment"># True</span>
+
+<span class="token builtin">isinstance</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> Iterator<span class="token punctuation">)</span>    <span class="token comment"># False</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><div class="custom-block danger"><p class="custom-block-title">小提示！</p> <p><em>集合数据类型如list、dict、str等是Iterable但不是Iterator，不过可以通过iter()函数获得一个Iterator对象</em>!</p></div> <h2 id="迭代器和生成器的关系"><a href="#迭代器和生成器的关系" class="header-anchor">#</a> 迭代器和生成器的关系</h2> <ul><li>生成器本质上就是一个迭代器</li> <li>生成器中说明了可以用表达式和生成器函数来表示生成器</li> <li>迭代器一类是生成器，一类是通过集合类可迭代对象进行构建</li></ul> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment">#1.5选代器</span>
+<span class="token keyword">def</span> <span class="token function">test_iterator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">from</span> collections<span class="token punctuation">.</span>abc <span class="token keyword">import</span> Iterator<span class="token punctuation">,</span>Generator
+    b <span class="token operator">=</span> <span class="token punctuation">(</span>n <span class="token keyword">for</span> n <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">isinstance</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span>Generator<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">isinstance</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span>Iterator<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    
+    a_l1st<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span>
+    b <span class="token operator">=</span> <span class="token builtin">iter</span><span class="token punctuation">(</span>a_list<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">next</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">next</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+test_iterator<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p><img src="https://gitee.com/yuhaostudy/blogimages/raw/master/%20images/202306240008010.png" alt="image-20230624000833954"></p> <h2 id="函数式编程"><a href="#函数式编程" class="header-anchor">#</a> 函数式编程</h2> <div class="custom-block tip"><p class="custom-block-title">目录</p> <ul><li><p>高阶函数</p></li> <li><p>返回函数</p></li> <li><p>匿名函数</p></li></ul></div> <h3 id="高阶函数"><a href="#高阶函数" class="header-anchor">#</a> 高阶函数</h3> <ul><li>变量可以指向函数</li> <li>函数名也是变量，指向实际函数，如果调整函数名的指向，那么原先函数就无法被调用</li> <li>传入函数，函数可以是变量，那么一个函数可以接收其他函数作为变量，这种函数称之为高阶函数</li></ul> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token comment">#2.1高阶函数</span>
+<span class="token keyword">def</span> <span class="token function">fun</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+	<span class="token keyword">return</span> x<span class="token operator">*</span>x
+
+<span class="token keyword">def</span> <span class="token function">test_higher_order_func</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>f<span class="token punctuation">)</span><span class="token punctuation">:</span>
+	<span class="token keyword">return</span> f<span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token operator">+</span>f<span class="token punctuation">(</span>b<span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>test_higher_order_func<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span>fun<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>1.map函数：map()函数接收两个参数，一个是函数，一个是Iterable，map将传入的函数依次作用到序列的每个元素，并把结果作为新的Iterator返回。</p> <p>比如我们有一个函数f(x)=x2，要把这个函数作用在一个list [1, 2, 3, 4, 5, 6, 7, 8, 9]上，就可以用map()实现如下</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">f</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+     <span class="token keyword">return</span> x<span class="token operator">*</span>x
+r <span class="token operator">=</span> <span class="token builtin">map</span><span class="token punctuation">(</span>f<span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+a <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>2.reduce函数：reduce把一个函数作用在一个序列[x1, x2, x3, ...]上，这个函数必须接收两个参数，reduce把结果继续和序列的下一个元素做累积计算。其效果就是：</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token builtin">reduce</span><span class="token punctuation">(</span>f<span class="token punctuation">,</span> <span class="token punctuation">[</span>x1<span class="token punctuation">,</span> x2<span class="token punctuation">,</span> x3<span class="token punctuation">,</span> x4<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">=</span> f<span class="token punctuation">(</span>f<span class="token punctuation">(</span>f<span class="token punctuation">(</span>x1<span class="token punctuation">,</span> x2<span class="token punctuation">)</span><span class="token punctuation">,</span> x3<span class="token punctuation">)</span><span class="token punctuation">,</span> x4<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="返回函数"><a href="#返回函数" class="header-anchor">#</a> 返回函数</h3> <p>返回函数：函数作为返回值。</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">lazy_sum</span><span class="token punctuation">(</span><span class="token operator">*</span>args<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        ax <span class="token operator">=</span> <span class="token number">0</span>
+        <span class="token keyword">for</span> n <span class="token keyword">in</span> args<span class="token punctuation">:</span>
+            ax <span class="token operator">=</span> ax <span class="token operator">+</span> n
+        <span class="token keyword">return</span> ax
+    <span class="token keyword">return</span> <span class="token builtin">sum</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>当我们调用lazy_sum()时，返回的并不是求和结果，而是求和函数</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> f <span class="token operator">=</span> lazy_sum<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> f
+<span class="token operator">&lt;</span>function lazy_sum<span class="token punctuation">.</span><span class="token operator">&lt;</span><span class="token builtin">locals</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><span class="token builtin">sum</span> at <span class="token number">0x101c6ed90</span><span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>调用函数f时，才真正计算求和的结果</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> f<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token number">25</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="匿名函数"><a href="#匿名函数" class="header-anchor">#</a> 匿名函数</h3> <p>匿名函数：当我们在传入函数时，有些时候，不需要显式地定义函数，直接传入匿名函数更方便。</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token builtin">map</span><span class="token punctuation">(</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x <span class="token operator">*</span> x<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">36</span><span class="token punctuation">,</span> <span class="token number">49</span><span class="token punctuation">,</span> <span class="token number">64</span><span class="token punctuation">,</span> <span class="token number">81</span><span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><em><strong>关键字lambda表示匿名函数，冒号前面的x表示函数参数</strong></em></p> <h2 id="面相对象编程"><a href="#面相对象编程" class="header-anchor">#</a> 面相对象编程</h2> <div class="custom-block tip"><p class="custom-block-title">目录</p> <ul><li><p>类和实例</p></li> <li><p>继承和多态</p></li> <li><p>模块引入</p></li></ul></div> <h3 id="类和实例"><a href="#类和实例" class="header-anchor">#</a> 类和实例</h3> <p>面向对象最重要的概念就是类（Class）和实例（Instance），必须牢记类是抽象的模板。而实例是根据类创建出来的一个个具体的“对象”</p> <p>在Python中，定义类是通过class关键字</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">Student</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> name<span class="token punctuation">,</span> score<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>name <span class="token operator">=</span> name
+        self<span class="token punctuation">.</span>score <span class="token operator">=</span> score
+
+
+tom <span class="token operator">=</span> Student<span class="token punctuation">(</span>‘Tom’<span class="token punctuation">,</span><span class="token number">90</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><blockquote><p>①class后面紧接着是类名，类名通常是大写开头的单词，紧接着是(object)，表示该类是从哪个类继承下来。</p> <p>②类可以起到模板的作用，因此，可以在创建实例的时候，通过定义一个特殊的__init__方法，把name，score等属性绑上去。</p> <p>③有了__init__方法，在创建实例的时候，就不能传入空的参数了,必须传入与__init__方法匹配的参数。这样就初始化了一个名字叫Tom的学生实例。</p></blockquote> <h3 id="继承"><a href="#继承" class="header-anchor">#</a> 继承</h3> <p>在OOP程序设计中，当我们定义一个class的时候，可以从某个现有的class继承，新的class称为子类，而被继承的class称为基类、父类或超类</p> <p>animal类</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">Animal</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">run</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Animal is running...'</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>Dog和Cat类（继承nimal）</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">Dog</span><span class="token punctuation">(</span>Animal<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">pass</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Cat</span><span class="token punctuation">(</span>Animal<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">pass</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>Dog和Cat作为它的子类，什么事也没干，就自动拥有了run()方法</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>dog <span class="token operator">=</span> Dog<span class="token punctuation">(</span><span class="token punctuation">)</span>
+dog<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+cat <span class="token operator">=</span> Cat<span class="token punctuation">(</span><span class="token punctuation">)</span>
+cat<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">Dog</span><span class="token punctuation">(</span>Animal<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">pass</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Cat</span><span class="token punctuation">(</span>Animal<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">pass</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="多态"><a href="#多态" class="header-anchor">#</a> 多态</h3> <p>在面向对象程序设计中，除了封装和继承特性外，多态也是一个非常重要的特性。</p> <p>我们都知道，<a href="http://c.biancheng.net/python/" target="_blank" rel="noopener noreferrer">Python<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 是弱类型语言，其最明显的特征是在使用变量时，无需为其指定具体的数据类型。这会导致一种情况，即同一变量可能会被先后赋值不同的类对象，例如：</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">CLanguage</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">say</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;赋值的是 CLanguage 类的实例对象&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">CPython</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">say</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;赋值的是 CPython 类的实例对象&quot;</span><span class="token punctuation">)</span>
+a <span class="token operator">=</span> CLanguage<span class="token punctuation">(</span><span class="token punctuation">)</span>
+a<span class="token punctuation">.</span>say<span class="token punctuation">(</span><span class="token punctuation">)</span>
+a <span class="token operator">=</span> CPython<span class="token punctuation">(</span><span class="token punctuation">)</span>
+a<span class="token punctuation">.</span>say<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>运行结果为：</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>赋值的是 CLanguage 类的实例对象
+赋值的是 CPython 类的实例对象
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>可以看到，a 可以被先后赋值为 CLanguage 类和 CPython 类的对象，但这并不是多态。类的多态特性，还要满足以下 2 个前提条件：</p> <ol><li>继承：多态一定是发生在子类和父类之间；</li> <li>重写：子类重写了父类的方法。</li></ol> <p>下面程序是对上面代码的改写：</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">CLanguage</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">say</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;调用的是 Clanguage 类的say方法&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">CPython</span><span class="token punctuation">(</span>CLanguage<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">say</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;调用的是 CPython 类的say方法&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">CLinux</span><span class="token punctuation">(</span>CLanguage<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">say</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;调用的是 CLinux 类的say方法&quot;</span><span class="token punctuation">)</span>
+a <span class="token operator">=</span> CLanguage<span class="token punctuation">(</span><span class="token punctuation">)</span>
+a<span class="token punctuation">.</span>say<span class="token punctuation">(</span><span class="token punctuation">)</span>
+a <span class="token operator">=</span> CPython<span class="token punctuation">(</span><span class="token punctuation">)</span>
+a<span class="token punctuation">.</span>say<span class="token punctuation">(</span><span class="token punctuation">)</span>
+a <span class="token operator">=</span> CLinux<span class="token punctuation">(</span><span class="token punctuation">)</span>
+a<span class="token punctuation">.</span>say<span class="token punctuation">(</span><span class="token punctuation">)</span>	
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>程序执行结果为：</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>调用的是 Clanguage 类的say方法
+调用的是 CPython 类的say方法
+调用的是 CLinux 类的say方法
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>可以看到，CPython 和 CLinux 都继承自 CLanguage 类，且各自都重写了父类的 say() 方法。从运行结果可以看出，同一变量 a 在执行同一个 say() 方法时，由于 a 实际表示不同的类实例对象，因此 a.say() 调用的并不是同一个类中的 say() 方法，这就是多态。</p> <p>但是，仅仅学到这里，读者还无法领略 Python 类使用多态特性的精髓。其实，Python 在多态的基础上，衍生出了一种更灵活的编程机制。</p> <p>继续对上面的程序进行改写：</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">WhoSay</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">say</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>who<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        who<span class="token punctuation">.</span>say<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">CLanguage</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">say</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;调用的是 Clanguage 类的say方法&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">CPython</span><span class="token punctuation">(</span>CLanguage<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">say</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;调用的是 CPython 类的say方法&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">CLinux</span><span class="token punctuation">(</span>CLanguage<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">say</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;调用的是 CLinux 类的say方法&quot;</span><span class="token punctuation">)</span>
+a <span class="token operator">=</span> WhoSay<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">#调用 CLanguage 类的 say() 方法</span>
+a<span class="token punctuation">.</span>say<span class="token punctuation">(</span>CLanguage<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment">#调用 CPython 类的 say() 方法</span>
+a<span class="token punctuation">.</span>say<span class="token punctuation">(</span>CPython<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment">#调用 CLinux 类的 say() 方法</span>
+a<span class="token punctuation">.</span>say<span class="token punctuation">(</span>CLinux<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><p>程序执行结果为：</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code>调用的是 Clanguage 类的say方法
+调用的是 CPython 类的say方法
+调用的是 CLinux 类的say方法
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>此程序中，通过给 WhoSay 类中的 say() 函数添加一个 who 参数，其内部利用传入的 who 调用 say() 方法。这意味着，当调用 WhoSay 类中的 say() 方法时，我们传给 who 参数的是哪个类的实例对象，它就会调用那个类中的 say() 方法。</p> <blockquote><p><em><strong>在其它教程中，Python 这种由多态衍生出的更灵活的编程机制，又称为“鸭子模型”或“鸭子类型”。</strong></em></p></blockquote> <h3 id="模块引入及正则表达式"><a href="#模块引入及正则表达式" class="header-anchor">#</a> 模块引入及正则表达式</h3> <p>Python本身就内置了很多非常有用的模块，只要安装完毕，这些模块就可以立刻使用</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token keyword">import</span> re   <span class="token comment"># 引入re模块</span>
+<span class="token comment"># 调用re模块match方法匹配字符串</span>
+re<span class="token punctuation">.</span><span class="token keyword">match</span><span class="token punctuation">(</span><span class="token string">r'^\d{3}\-\d{3,8}$'</span><span class="token punctuation">,</span> <span class="token string">'010-12345'</span><span class="token punctuation">)</span>   
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><em>导入re模块后，我们就有了变量re指向该模块，利用re这个变量，就可以访问re模块的所有功能。</em></p> <p><em><em>re模块</em>:<em>Python提供re模块，包含所有正则表达式的功能</em></em><a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017639890281664" target="_blank" rel="noopener noreferrer">正则表达式 (liaoxuefeng.com)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/python/python_base.html" class="prev">
+        基础
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.37e92eea.js" defer></script><script src="/assets/js/2.eeb78de2.js" defer></script><script src="/assets/js/110.adf9e69a.js" defer></script>
+  </body>
+</html>
